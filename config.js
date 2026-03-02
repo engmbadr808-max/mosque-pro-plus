@@ -1,4 +1,3 @@
-
 const CONFIG = {
 
     mosqueName: "مسجد النور",
