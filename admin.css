@@ -1,1 +1,22 @@
+body{
+font-family:Tajawal;
+padding:40px;
+background:#111;
+color:white;
+}
 
+input{
+display:block;
+margin:10px 0 20px;
+padding:10px;
+font-size:18px;
+width:300px;
+}
+
+button{
+padding:12px 20px;
+font-size:18px;
+background:gold;
+border:none;
+cursor:pointer;
+}
