@@ -1,83 +1,108 @@
 body{
 margin:0;
-font-family:Tajawal,Arial;
-background:black;
+font-family:'Tajawal',sans-serif;
 color:white;
 overflow:hidden;
+background:black;
 }
 
+/* خلفية احترافية */
 .bg{
 position:fixed;
 width:100%;
 height:100%;
-background:url("assets/bg.jpg") center/cover;
+background:url("assets/bg.jpg") center/cover no-repeat;
 filter:brightness(.35);
+z-index:-1;
 }
+
+/* HEADER */
 
 header{
 display:flex;
 justify-content:space-between;
-padding:50px;
+align-items:flex-start;
+padding:60px;
 }
 
 #mosqueName{
-font-size:40px;
-font-weight:bold;
+font-size:42px;
+font-weight:700;
 }
 
 #zekr{
-font-size:42px;
+position:absolute;
+top:70px;
+left:50%;
+transform:translateX(-50%);
+font-size:38px;
 background:rgba(0,0,0,.6);
-padding:20px 40px;
-border-radius:15px;
+padding:20px 50px;
+border-radius:20px;
+border:1px solid rgba(255,215,0,.4);
 }
+
+/* CLOCK */
 
 .clock{
 text-align:left;
 }
 
 #time{
-font-size:90px;
-font-weight:bold;
+font-size:110px;
+font-weight:800;
 }
 
 #date,#hijri{
 font-size:26px;
+opacity:.9;
 }
+
+/* PRAYERS BAR */
 
 .prayers{
 position:absolute;
-bottom:60px;
+bottom:70px;
 width:100%;
 display:flex;
 justify-content:center;
-gap:20px;
+gap:35px;
 }
 
 .prayer{
 background:rgba(0,0,0,.75);
-padding:25px 35px;
-border-radius:14px;
+padding:30px 45px;
+border-radius:20px;
 text-align:center;
-font-size:26px;
+font-size:28px;
+transition:.3s;
+border:1px solid transparent;
 }
 
-.active{
-background:gold;
-color:black;
-transform:scale(1.15);
+.prayer strong{
+display:block;
+font-size:34px;
+margin-top:8px;
 }
+
+/* الصلاة الحالية */
+
+.active{
+background:linear-gradient(145deg,#ffd700,#caa400);
+color:black;
+transform:scale(1.2);
+box-shadow:0 0 35px rgba(255,215,0,.6);
+}
+
+/* COUNTDOWN */
 
 .countdown{
 position:absolute;
 top:50%;
 left:50%;
 transform:translate(-50%,-50%);
-font-size:170px;
-font-weight:bold;
-color:gold;
-}
-
-.hidden{
-display:none;
+font-size:200px;
+font-weight:900;
+color:#ffd700;
+text-shadow:0 0 40px gold;
 }
